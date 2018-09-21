@@ -8,6 +8,6 @@ if (environment.production) {
   enableProdMode();
 }
 
-platformBrowserDynamic().bootstrapModule(AppModule)
+platformBrowserDynamic().bootstrapModule(AppModule) //รัน ที่บราวเซอร์ โดยดึง module มาด้วย
   .catch(err => console.log(err));
 
