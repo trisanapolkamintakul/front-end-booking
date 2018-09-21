@@ -8,7 +8,7 @@ import { Hotel } from 'src/app/hotelapp';
 })
 export class WishListComponent implements OnInit {
 
-@Input() wishList : Hotel;
+@Input() wishList : Hotel; //เราต้อง @Input เพื่อรับเข้าจาก Hotel ไป wishList
 
   constructor() { }
 

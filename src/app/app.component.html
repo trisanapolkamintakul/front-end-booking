@@ -10,16 +10,18 @@
     <ul class="navbar-nav mr-auto">
       <li class="nav-item ">
         <!-- //<a class="nav-link" (click)="currentPage= 'Home'" >Home booking </a> -->
-        <a class="nav-link" routerLink = "/home">Home booking</a>
+        <a class="nav-link" routerLink="/home">Home booking</a>
       </li>
       <li class="nav-item ">
-          <!-- <a class="nav-link" (click)="currentPage='wishList'">Wish List </a> -->
-          <a class="nav-link" routerLink = "/wishlist">Wish List</a>
-        </li>
+        <!-- <a class="nav-link" (click)="currentPage='wishList'">Wish List </a> -->
+        <a class="nav-link" routerLink="/wishlist">Wish List</a>
+        <!-- routerLink ใช้เพื่อ เปลี่ยนหน้าแต่จะไม่ รีเฟสหน้า -->
+
+      </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Manage booking</a>
       </li>
-      
+
       <li class="nav-item">
         <a class="nav-link disabled" href="#">About</a>
       </li>
@@ -32,7 +34,8 @@
 </nav>
 
 
-<router-outlet></router-outlet>
+<router-outlet></router-outlet> <!-- วิธีดึงค่ามาโชว์หน้าเว็ป -->
+
 
 <!-- <app-home-booking></app-home-booking> -->
 <!-- <div class="container">

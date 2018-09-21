@@ -3,9 +3,10 @@
         <div class="card" style="width: 18rem;">
           <img class="card-img-top" src="{{ hotel.imageUrl }}" alt="image">
           <div class="card-body">
-            <p class="card-text">{{ hotel.name }}</p>
+            <p class="card-text">{{ hotel.name }}</p> <!-- class="card-text" เป็นแค่ from of bootstap -->
+            
             <td>{{ hotel.description }}</td>
           </div>
           <button (click)="onStarClick()">Book(Star)</button>
         </div>
-   
+   <!-- use set pang of homepang -->
