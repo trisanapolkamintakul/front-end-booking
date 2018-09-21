@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-info">
-  <a class="navbar-brand" href="#">booking</a> <!-- href ใช้คลิกลิ้งหน้า -->
+  <a class="navbar-brand">booking</a> <!-- href ใช้คลิกลิ้งหน้า -->
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,7 +23,7 @@
       </li>
 
       <li class="nav-item">
-        <a class="nav-link disabled" href="#">About</a>
+        <a class="nav-link disabled" routerLink="/about">About</a>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
@@ -34,17 +34,19 @@
 </nav>
 
 
-<router-outlet></router-outlet> <!-- วิธีดึงค่ามาโชว์หน้าเว็ป -->
+<router-outlet>
 
+</router-outlet> <!-- วิธีดึงค่ามาโชว์หน้าเว็ป -->
 
 <!-- <app-home-booking></app-home-booking> -->
 <!-- <div class="container">
-  <div class="row"*ngIf="currentPage =='Home'">
+  <div class="row"*ngIf="currentPage =='Home'"> 
 
     <div class="col-sm" *ngFor="let hotel of hotels">
 
       <app-hotel [hotel]="hotel"
-      (star)="addWishList(hotel)"></app-hotel>
+      (star)="addWishList(hotel)"></app-hotel> 
+      
 
     </div>
 

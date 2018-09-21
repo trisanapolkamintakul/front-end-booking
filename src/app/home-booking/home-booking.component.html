@@ -1,3 +1,4 @@
+<div class="col-sm" *ngFor="let hotel of hotelService.hotels">
 <div class="card" style="width: 18rem;">
     <img class="card-img-top" src="{{ hotel.imageUrl }}" alt="image">   <!-- {{ใช้ดึงค่าทั้งหมดจาก หน้า.}} -->
   
@@ -5,5 +6,6 @@
       <p class="card-text">{{ hotel.name }}</p>
       <td>{{ hotel.description }}</td>
     </div>
-    <button (click)="onStarClick()">Book(Star)</button>
+    <button (click)="addWishList(hotel)">Book(Star)</button>
+  </div>
   </div>
